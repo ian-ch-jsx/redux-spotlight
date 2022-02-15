@@ -1,0 +1,44 @@
+.dark {
+  background-color: #121212;
+  color: yellowgreen;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: row;
+  min-width: 100vh;
+  min-height: 100vh;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.dark button {
+  border: 0;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  background-color: yellowgreen;
+  font-size: 1.2rem;
+}
+
+.day {
+  background-color: #fefefe;
+  color: #bb4430;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: row;
+  min-width: 100vh;
+  min-height: 100vh;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.day button {
+  border: 0;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #bb4430;
+  color: #fefefe;
+  font-size: 1.2rem;
+}
