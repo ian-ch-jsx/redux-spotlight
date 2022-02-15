@@ -1,12 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {
+const initialCount = {
   count: 0,
 };
 
 export const counterSlice = createSlice({
   name: 'counter',
-  initialState,
+  initialState: initialCount,
+  // defines the ways our slice will update our state
   reducers: {
     increment: (state) => {
       //Redux is using Immer library under the hood to ensure immutable data
@@ -17,10 +18,16 @@ export const counterSlice = createSlice({
     decrement: (state) => {
       state.count -= 1;
     },
+    multiply: (state) => {
+      state.count *= 2;
+    },
+    reset: (state) => {
+      state.count = 0;
+    },
   },
 });
 
-export const { increment, decrement } = counterSlice.actions;
+export const { increment, decrement, multiply, reset } = counterSlice.actions;
 
 //Export the reducer function from the slice
 export default counterSlice.reducer;
