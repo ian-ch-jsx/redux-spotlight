@@ -16,7 +16,7 @@ const Counter = () => {
   console.log(isDarkMode);
   return (
     <div className={isDarkMode ? 'dark' : 'day'}>
-      <button onClick={() => dispatch(DarkMode())}>darkmode</button>
+      <button onClick={() => dispatch(DarkMode())}>toggle darkmode</button>
       <button
         aria-label="Decrement value"
         onClick={() => {
